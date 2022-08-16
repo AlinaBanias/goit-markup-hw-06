@@ -213,7 +213,8 @@
     border-radius: 50%;
     background-color: #ffffff;
   
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .socials-link.cont {
@@ -226,7 +227,8 @@
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 10%);
   
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .social-icon {
     width: 20px;
@@ -267,6 +269,7 @@
   }
   .clients-icon {
     fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .clients-link:hover .clients-icon,
   .clients-link:focus .clients-icon {
@@ -288,6 +291,7 @@
   }
   .backdrop {
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
