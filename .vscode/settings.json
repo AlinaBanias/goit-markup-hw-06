@@ -3,5 +3,5 @@
     "git.allowForcePush": true,
     "git.alwaysShowStagedChangesResourceGroup": true,
     "git.alwaysSignOff": true,
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5502
 }
