@@ -122,6 +122,7 @@
     background-color: var(--accent-color);
     border-radius: 2px;
   }
+   
   
   
   .link:hover,
@@ -272,6 +273,8 @@
   .foot-cont {
     padding-top: 12px;
   }
+ 
+
   .title-foot {
     font-weight: 700;
     font-size: 14px;
@@ -284,6 +287,9 @@
   }
   .icon-foot {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
   /* Розсилка */
 
@@ -291,8 +297,9 @@
     width: 578px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-left: 93px;
-    margin-bottom: 12px;
+    margin-bottom: 23px;
   }
   .form-field-footer {
     display: flex;
@@ -347,7 +354,7 @@
     line-height: 1.8;
     align-items: center;
     letter-spacing: 0.06em;
-    
+
     border: 0;
     border-radius: 4px;
   }
