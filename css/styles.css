@@ -387,8 +387,6 @@ fill: var(--accent-color);
   fill: var(--accent-color);
 }
 .form-icons {
-  width: 18px;
-  height: 18px;
   position: absolute;
   bottom: 11px;
   left: 12px;
