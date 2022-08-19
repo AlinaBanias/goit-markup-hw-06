@@ -60,7 +60,7 @@ span {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.button {
+.btn-modal {
   padding: 10px 32px;
   background-color: var(--accent-color);
   color: #ffffff;
