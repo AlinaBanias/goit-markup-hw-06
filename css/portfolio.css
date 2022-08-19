@@ -3,6 +3,7 @@
   --accent-color: #2196f3;
   --primary-bgr-color: #f5f5f5;
   --second-text-color: #757575;
+  --anim-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 h1,
 h2,
@@ -38,9 +39,9 @@ p {
   line-height: 26px;
   border-radius: 4px;
   border: 0;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--anim-fast),
+    color  var(--anim-fast),
+    box-shadow var(--anim-fast);
 }
 .button:hover,
 .button:focus {
@@ -79,7 +80,7 @@ p {
   display: block;
   text-decoration: none;
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--anim-fast);
 }
 .images:hover,
 .images:focus {
@@ -91,24 +92,6 @@ p {
   overflow: hidden;
 }
 
-/* .images-anime{
- 
- position: absolute;
-  width: 100%;
-  height: 100%;
- display: block;
-  bottom: 0 ;
-  left: 0;
-  
-  
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-   
-} */
-/* .images-anime:hover,
-.images-anime:focus {
-  transform: translateY(0); 
-}   */
 
 .label {
   position: absolute;
@@ -129,7 +112,7 @@ p {
   color: #ffffff;
 
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--anim-fast);
 }
 .images:hover .label,
 .images:focus .label {
@@ -188,7 +171,7 @@ p {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 10%);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--anim-fast);
 }
 .social-icon {
   fill: #afb1b8;

@@ -2,6 +2,7 @@
   --primary-text-color: #212121;
   --accent-color: #2196f3;
   --second-text-color: #757575;
+  --anim-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 h1,
 h2,
@@ -11,7 +12,7 @@ p {
   margin-top: 0px;
 }
 
-.logo {
+.nav__logo {
   color: #000000;
 }
 span {
@@ -20,14 +21,14 @@ span {
 .list {
   list-style: none;
 }
-.site-nav .link {
+.nav-list .link {
   color: var(--primary-text-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.nav-list .link:hover,
+.nav-list .link:focus {
   color: var(--accent-color);
 }
-.site-nav .link.current {
+.nav-list .link.current {
   color: var(--accent-color);
 }
 
@@ -127,18 +128,6 @@ span {
 .photo-label {
   position: relative;
 }
-/* .photo-label::after{
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 70px;
-      
-  
-      
-      
-  } */
 
 .photo > .label-image {
   position: absolute;
@@ -212,7 +201,7 @@ span {
   border-radius: 50%;
   background-color: #ffffff;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--anim-fast);
 }
 
 .socials-link.cont {
@@ -225,14 +214,14 @@ span {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 10%);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--anim-fast);
 }
 
 .social-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--anim-fast);
 }
 .socials-link:hover .social-icon,
 .socials-link:focus .social-icon {
@@ -263,11 +252,11 @@ span {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   opacity: 1;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--anim-fast);
 }
 .clients-icon {
   fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--anim-fast);
 }
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
@@ -298,7 +287,7 @@ span {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--anim-fast);
 }
 .modal {
   position: absolute;
@@ -312,7 +301,7 @@ span {
   left: 50%;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--anim-fast);
 }
 .button-modal {
   position: absolute;
@@ -336,9 +325,6 @@ fill: var(--accent-color);
   min-height: 580px;
   padding: 40px;
 
-  /* flex-direction: column;
-  width: 448px;
-  outline: 1px solid tomato; */
 }
 .form-title {
   display: block;
@@ -378,7 +364,7 @@ fill: var(--accent-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: border-color var(--anim-fast) ;
 }
 .form-input:focus{
   border-color: var(--accent-color);
@@ -393,7 +379,7 @@ fill: var(--accent-color);
   
 
   fill: #212121;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--anim-fast);
 }
 .form-comment {
   width: 448px;
@@ -411,7 +397,7 @@ fill: var(--accent-color);
   border-radius: 4px;
   outline: transparent;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--anim-fast);
 }
 .form-comment::placeholder{
   color: currentColor;
@@ -451,7 +437,7 @@ user-select: none;
 
 .icon-uncheck {
   
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: opacity var(--anim-fast); 
 }
 .form-checkbox:checked + .form-icons-agreement > .icon-uncheck {
    opacity: 0; 
@@ -460,7 +446,7 @@ user-select: none;
   
    opacity: 0;
   fill: var(--accent-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: opacity var(--anim-fast); 
 }
 .form-checkbox:checked + .form-icons-agreement > .icon-check {
    opacity: 1; 
